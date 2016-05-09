@@ -1,0 +1,50 @@
+ <nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        <img src="images/logo-marble-login.png" alt="" width="150px" height="50px"/>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <!-- Top content -->
+    <div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                      <div class="col-sm-5 ebook">
+                        <img src="images/ebook.png" alt="ebook">
+                      </div>
+                        <div class="col-sm-7 text ">
+                            <h2 class="wow fadeInLeftBig">
+                              The New Way to Design Your Life
+                            </h2>
+                            <div class="form-box">
+                              <div class="form-top-left">
+                                <h3 class="subtitle">
+                                Welcome to Marble's World
+                                </h3>
+                              </div>
+                              <div class="form-bottom" style=" width: 410px;" ng-controller="LoginController" >
+                                <form name="form" ng-submit="login()" role="form" class="registration-form">
+                                  <div class="form-group">
+                                    <label class="sr-only" for="username">User name</label>
+                                      <input type="text" style="width: 350px;" name="username" ng-model="username" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label class="sr-only" for="password">Last name</label>
+                                      <input type="password" style="height: 50px  ;width: 350px;" name="password" ng-model="password" placeholder="Pass word..."class="form-password form-control" id="form-last-name">
+                                    </div> 
+                                    <button type="submit"  style="height: 50px  ;width: 350px;" class="btn signinbtn">Sign In</button>
+                                 </form>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>

@@ -1,0 +1,167 @@
+
+<div class="wz-header-default">
+	<div class="wz-header-container">
+		<div class="wz-logo" >
+			<img id = "pagelogo" src="images/logo-marble-home.png" alt="" width="200px" height="50px">
+		</div>
+		<div class="wz-navigation-wrapper">
+			<nav class="wz-navigation sf-js-enabled sf-arrows" role="navigation">
+				<ul class="wz-main-menu sf-menu">
+					<li class="menu-item current">
+						<a href="#home">Home</a>
+					</li>
+					<li class="menu-item">
+						<a href="#home">Menu-Item</a>
+						<ul class="sub-menu-items">
+							<li>
+								<a href="followed.html">menu item 1</a>
+							</li>
+							<li class="current">
+								<a href="followed.html">menu item 2</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu-item">
+						<a href="#home">Menu-Item</a>
+					</li>
+					<li class="menu-item">
+						<a href="#home">Menu-Item</a>
+					</li>
+					<li class="menu-item">
+						<a href="#home">Menu-Item</a>
+					</li>
+					
+				</ul>
+			</nav>
+			<div class="loginblock">
+				<p style="color:#000">{{currentUser}} logged in!!</p>
+				<p><a href="#/login">Logout</a></p>
+			</div>
+
+						
+
+		</div>
+	</div>
+</div>
+<div class="wz-content-wrapper">
+	<div class="wz-content">
+		<section id="wz-content-sec1">
+			<div class="wz-sec1-container">
+			  
+				<div class="wz-nav-chart-view ">
+				 <div class="topleaders"><h4>Top 5 Sales For The Year</h4><br/></div>
+				<div class="scroll inside-nav-view">
+
+				<div class="nav-chart-lsit-containner"  ng-repeat="row in salesGroups">
+					  <div class="media">
+							  <div class="media-left">
+							    <h3> {{row.orderNum}}<h3> 
+							  </div>
+							  <div class="media-body">
+							    <h5 class="media-heading">{{row.userName}}</h4>
+							    <span></span> {{row.value}}</h6>
+							    <h5> {{row.qty}}</h5>
+							  </div>
+			    </div>
+
+				</div>
+				</div>
+				</div>
+				<div class="wz-chart-view-line">
+					<div id="ChartContainer-Line">FusionCharts XT will load here!</div>
+				</div>
+				<div class="wz-chart-view-pie">
+					<div id="ChartContainer-Pie">FusionCharts XT will load here!</div>
+				</div>
+			</div>
+		</section>
+		<section id="wz-content-sec2">
+			<div class="wz-sec2-container">
+				<div class="wz-items-wrapper">
+				<div class="wz-items"><div class="topleaders"><h4>Top 5 Leaders</h4></div>
+				    <div class="wz-products columns"  ng-repeat="row in groups">
+
+						<div class="wz-item-container">
+							<div class="item-container">
+								<div class="item-inner-container">
+									<div class="item-head-image">
+										<img src="images/{{$index+1}}.jpg" width="150" height="150">
+									</div>
+									<div class="item-topic-wrapper">
+										<div class="item-topic">{{row[0]}}</div>
+									</div>
+									<div class="item-content-body">
+										<p>{{row[1]}}</p>
+									</div>
+								</div>	
+							</div>
+						</div>
+					     </div>
+				     </div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
+
+<div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Support</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+			  <div class="form-group">
+			    <label for="email">Subject Text</label>
+			    <input type="text" class="form-control" id="sub">
+			  </div>
+			  <div class="form-group">
+			    <label for="pwd">Detail Text</label>
+			    <input type="text" class="form-control" id="content">
+			  </div>
+			  <button type="submit" class="btn btn-default">Send</button>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Privacy Policy - Terms of Use & Support</h4>
+      </div>
+      <div class="modal-body">
+        <h6>Terms of Use | Privacy Policy | Marble.Org</h6>
+<h5>
+Marble Tile Design Center
+www.marbles.org Web site Terms Of Use
+
+PLEASE REVIEW THESE TERMS OF USE (THE "TERMS") FOR FRED HUTCH www.marbles.org WEB SITE (THE "SITE"). BY USING THIS SITE, YOU AGREE TO FOLLOW AND BE BOUND BY THE TERMS. IF YOU DO NOT AGREE WITH ANY OF THE TERMS, PLEASE DO NOT USE THIS SITE.</h5>
+<h6>Unless otherwise expressly noted, you should assume everything you see, hear, or otherwise receive from or on the Site (the "Content") is copyright, trademark, trade dress or other intellectual property owned or licensed by Fred Hutch. The Content includes, without limitation, images, illustrations, designs, icons, photographs, trademarks, logos, text, sounds, music, the Site as a whole and any other materials at the Site.</h6>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#961313  -->
+
+<footer class="wz-footer-wrapper">
+		<div class="policy"><a data-toggle="modal" data-target="#myModal">Privacy Policy , Terms of Use & Support</a></div>
+		<div class="supoort"><a data-toggle="modal" data-target="#supportModal">Support</a></div>
+		<div id="wz-blog-header">
+					<div class="wz-blog-header-container">
+						<div class="row">
+							<div class="col-md-12">
+							<h2><img src="images/logo-marble-login.png" alt="CAKELABS" height="100" width="300"><span style="font-size: 36px ; font-weight:200">|</span> DESIGN WORLD</h2>
+							</div>
+						</div>
+			    </div>
+		</div>
+</footer>
